@@ -11,5 +11,7 @@ EditorBuildSettings:
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: b27b576a60ce7b743a23573bc7dff172, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 2e71f353a5ab9104796b35cc5a3447a0, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 1f7e39366eae77f4d8614bffd6fda33f, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 81828b6ae0e7c4f4eaa3e5062c8816f3, type: 2}
   m_UseUCBPForAssetBundles: 0
