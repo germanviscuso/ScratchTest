@@ -6832,7 +6832,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a07d5d10251915478347131c5a6ebe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _meshPrefab: {fileID: 8999845180316542267, guid: 2d6ac3b9dfc2b44458e32bd44afc2cfa, type: 3}
+  _meshPrefab: {fileID: 8999845180316542267, guid: d76e08864c90e124fbab315158f12dd7, type: 3}
 --- !u!114 &1411163740
 MonoBehaviour:
   m_ObjectHideFlags: 0

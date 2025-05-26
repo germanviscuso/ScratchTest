@@ -23,29 +23,29 @@ public class SpawnBall : MonoBehaviour
             SpawnAndThrowBall(controllerPosition, controllerRotation, controllerRotation * Vector3.forward);
         }
 
-        // Left Hand Pinch Gesture (Index Finger)
-        if (OVRInput.GetDown(OVRInput.Button.One, OVRInput.Controller.LHand))
-        {
-            if (OVRInput.GetControllerPositionTracked(OVRInput.Controller.LHand))
-            {
-                Vector3 handPosition = OVRInput.GetLocalControllerPosition(OVRInput.Controller.LHand);
-                Quaternion handRotation = OVRInput.GetLocalControllerRotation(OVRInput.Controller.LHand);
-                Vector3 throwDirection = handRotation * Vector3.up;
-                SpawnAndThrowBall(handPosition, handRotation, throwDirection);
-            }
-        }
+        // // Left Hand Pinch Gesture (Index Finger)
+        // if (OVRInput.GetDown(OVRInput.Button.One, OVRInput.Controller.LHand))
+        // {
+        //     if (OVRInput.GetControllerPositionTracked(OVRInput.Controller.LHand))
+        //     {
+        //         Vector3 handPosition = OVRInput.GetLocalControllerPosition(OVRInput.Controller.LHand);
+        //         Quaternion handRotation = OVRInput.GetLocalControllerRotation(OVRInput.Controller.LHand);
+        //         Vector3 throwDirection = handRotation * Vector3.up;
+        //         SpawnAndThrowBall(handPosition, handRotation, throwDirection);
+        //     }
+        // }
 
-        // Right Hand Pinch Gesture (Index Finger)
-        if (OVRInput.GetDown(OVRInput.Button.One, OVRInput.Controller.RHand))
-        {
-            if (OVRInput.GetControllerPositionTracked(OVRInput.Controller.RHand))
-            {
-                Vector3 handPosition = OVRInput.GetLocalControllerPosition(OVRInput.Controller.RHand);
-                Quaternion handRotation = OVRInput.GetLocalControllerRotation(OVRInput.Controller.RHand);
-                Vector3 throwDirection = handRotation * Vector3.down;
-                SpawnAndThrowBall(handPosition, handRotation, throwDirection);
-            }
-        }
+        // // Right Hand Pinch Gesture (Index Finger)
+        // if (OVRInput.GetDown(OVRInput.Button.One, OVRInput.Controller.RHand))
+        // {
+        //     if (OVRInput.GetControllerPositionTracked(OVRInput.Controller.RHand))
+        //     {
+        //         Vector3 handPosition = OVRInput.GetLocalControllerPosition(OVRInput.Controller.RHand);
+        //         Quaternion handRotation = OVRInput.GetLocalControllerRotation(OVRInput.Controller.RHand);
+        //         Vector3 throwDirection = handRotation * Vector3.down;
+        //         SpawnAndThrowBall(handPosition, handRotation, throwDirection);
+        //     }
+        // }
     }
 
     private void SpawnAndThrowBall(Vector3 spawnPosition, Quaternion spawnRotation, Vector3 throwDirection)
